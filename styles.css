@@ -366,10 +366,10 @@ cursor: pointer;
 /* footer-section starts */
 .footer-section{
     max-width: 1400px;
-    min-width: 400px;
+    min-width: 40vh;
     margin: 0 auto;
     background: #0B0223;
-    
+    margin-top: 20px;
     padding-top: 10px;
 }
 .footer-container{
@@ -531,7 +531,17 @@ margin-top:20px;
         
     }
      /* game card section ends */
-    
+      /* footer start  */
+     .footer-section{
+        max-width: 1400px;
+        min-width: 40vh;
+        margin: 0 auto;
+        background: #0B0223;
+        
+        padding-top: 10px;
+        margin-top: 20px;
+    }
+    /* footer end  */
 
 }
 
