@@ -215,12 +215,40 @@ background-position: center; */
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 
-    
+
 }
 
-  
-  
-  
+.single-img-container {
+    position: relative;
+}
+
+.overlay-icon {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    opacity: 0;
+    font-size: 40px;
+    color: white;
+
+}
+
+.overlay-icon-p {
+    position: absolute;
+    top: 57%;
+    left: 40%;
+    font-size: 20px;
+    opacity: 0;
+    color: #F948B2;
+}
+
+.single-img-container:hover .overlay-icon {
+    opacity: 1;
+}
+
+.single-img-container:hover .overlay-icon-p {
+    opacity: 1;
+}
+
 .game-img {
     width: 100%;
 }
@@ -312,14 +340,14 @@ background-position: center; */
 /* game cards section start */
 .game-cards-section {
     padding: 30px 150px;
-    margin-top:40px;
+    margin-top: 40px;
 }
 
 .game-cards-container {
     max-width: 1320px;
-    
+
     min-width: 200px;
-    gap:10px;
+    gap: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -328,111 +356,123 @@ background-position: center; */
 
 .single-game-card {
     flex-basis: 150px;
-    
-    
+
+
 }
-.single-game-card-inside{
+
+.single-game-card-inside {
     display: flex;
     align-items: center;
-    gap:5px;
+    gap: 5px;
 }
 
 .single-game-card img {
     border-radius: 50%;
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
-.single-game-card p{
+
+.single-game-card p {
     color: #0B0223;
-font-family: Work Sans;
-font-size: 13px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    font-family: Work Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
-.single-game-card .single-game-card-inside:hover{
-    border:1px solid #FF42A5;
+
+.single-game-card .single-game-card-inside:hover {
+    border: 1px solid #FF42A5;
     border-radius: 50px;
     padding: 5px;
     background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-justify-content: center;
-cursor: pointer;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    justify-content: center;
+    cursor: pointer;
 }
 
 /* game cards section end */
 
 /* footer-section starts */
-.footer-section{
+.footer-section {
     max-width: 1400px;
-    min-width: 40vh;
+    min-width: 1000px;
     margin: 0 auto;
     background: #0B0223;
     margin-top: 20px;
     padding-top: 10px;
+    padding-bottom: 60px;
 }
-.footer-container{
+
+.footer-container {
     max-width: 800px;
     padding-top: 20px;
     margin: 0px auto;
 }
-.footer-title{
-    display:flex;
-    color:white;
+
+.footer-title {
+    display: flex;
+    color: white;
     justify-content: center;
     align-items: center;
     font-family: Work Sans;
-font-size: 45px;
-font-style: normal;
-font-weight: 700;
-line-height: normal; 
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
-.footer-p{
+
+.footer-p {
     display: flex;
     color: #FFF;
-text-align: center;
-justify-content: center;
-gap:15px;
-font-family: Work Sans;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 20px;
 }
-.icon{
+
+.icon {
     margin-top: 20px;
     color: white;
     display: flex;
     justify-content: center;
     cursor: pointer;
-    
+
 }
-.icon .fa-brands{
-       padding: 10px;
-       font-size:20px;
+
+.icon .fa-brands {
+    padding: 10px;
+    font-size: 20px;
 }
-.footer-second-p{
+
+.footer-second-p {
     color: rgba(255, 255, 255, 0.60);
-text-align: center;
-font-family: Work Sans;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
-.footer-third-p
-{
+
+.footer-third-p {
     color: rgba(255, 255, 255, 0.60);
-text-align: center;
-font-family: Work Sans;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin-top:20px;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 20px;
+
 }
+
 /* footer-section ends */
 /* responsive related styles for tablet */
 
@@ -467,11 +507,12 @@ margin-top:20px;
     .banner-title {
         font-size: 18px;
         text-align: center;
+        margin-left: 10px;
     }
 
     .banner-point {
         font-size: 10px;
-        margin-left: 60px;
+        margin-left: 70px;
 
     }
 
@@ -483,7 +524,7 @@ margin-top:20px;
     }
 
     .btn-1 {
-        margin-left: 50px;
+        margin-left: 60px;
     }
 
     /* banner end  */
@@ -491,10 +532,26 @@ margin-top:20px;
     /* online game start  */
     .online-game-container {
         padding: 0px 100px;
-        
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 15px;
+    }
+
+    .overlay-icon {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        opacity: 0;
+        font-size: 40px;
+
+    }
+
+    .overlay-icon-p {
+        position: absolute;
+        top: 60%;
+        left: 35%;
+        font-size: 20px;
+        opacity: 0;
     }
 
     /* online game end  */
@@ -502,7 +559,6 @@ margin-top:20px;
     .play-instantly-container {
         margin-top: 50px;
         width: 100%;
-
         min-height: 200px;
         display: flex;
         gap: 30px;
@@ -519,28 +575,31 @@ margin-top:20px;
 
     .game-cards-section {
         padding: 0px 70px;
-        margin-top:10px;
+        margin-top: 10px;
     }
+
     .game-cards-container {
         max-width: 768px;
 
-        
     }
+
     .single-game-card {
         flex-basis: 100px;
-        
+
     }
-     /* game card section ends */
-      /* footer start  */
-     .footer-section{
+
+    /* game card section ends */
+    /* footer start  */
+    .footer-section {
         max-width: 1400px;
         min-width: 40vh;
         margin: 0 auto;
         background: #0B0223;
-        
+
         padding-top: 10px;
         margin-top: 20px;
     }
+
     /* footer end  */
 
 }
@@ -688,8 +747,8 @@ margin-top:20px;
         font-size: 20px;
         font-style: normal;
         font-weight: 700;
-        line-height: 60px;
-        
+        line-height: 35px;
+
     }
 
     .instantly-text {
@@ -697,83 +756,94 @@ margin-top:20px;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        line-height: 30px;
     }
+
     /* play instantly ends  */
 
-     /* game card section starts */
+    /* game card section starts */
 
     .game-cards-section {
         padding: 0px 70px;
-        margin-top:10px;
+        margin-top: 10px;
     }
+
     .game-cards-container {
         max-width: 425px;
-        
+
     }
+
     .single-game-card {
         flex-basis: 70px;
-        
+
     }
-    .single-game-card-inside{
-        gap:3px;
+
+    .single-game-card-inside {
+        gap: 3px;
     }
-    .single-game-card p{
-      
-    font-size: 8px;
-    
+
+    .single-game-card p {
+
+        font-size: 8px;
+
     }
+
     .single-game-card img {
-        width:50%;
-        
+        width: 50%;
+
         background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     }
-     /* game card section ends */
 
-     /* footer start  */
-     .footer-container{
+    /* game card section ends */
+
+    /* footer start  */
+    .footer-container {
         max-width: 380px;
-        
+
         margin: 0px auto;
     }
-    .footer-title{
-        
-    font-size: 20px;
-     
+
+    .footer-title {
+
+        font-size: 20px;
+
     }
-    .footer-p{
+
+    .footer-p {
         padding: 23px;
-        
+
         display: flex;
         flex-wrap: wrap;
-    gap:20px;
-    font-family: Work Sans;
-    font-size: 17px;
-    margin-top: 0px;
+        gap: 20px;
+        font-family: Work Sans;
+        font-size: 17px;
+        margin-top: 0px;
     }
-    .icon{
-        max-width:150px;
+
+    .icon {
+        max-width: 150px;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap:10px;
-        
+        gap: 10px;
+
     }
-    .icon .fa-brands{
-        
-           padding: 10px;
-           font-size:20px;
+
+    .icon .fa-brands {
+
+        padding: 10px;
+        font-size: 20px;
     }
-    
-    .footer-third-p
-    {
+
+    .footer-third-p {
         color: rgba(255, 255, 255, 0.60);
-    text-align: center;
-    font-family: Work Sans;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-top:20px;
+        text-align: center;
+        font-family: Work Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-top: 20px;
     }
 }
